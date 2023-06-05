@@ -70,7 +70,7 @@ class TextGenerationService(generate_pb2_grpc.TextGenerationServiceServicer):
 
     async def Prefill(self, request, context):
         batch = self.model.batch_type.from_pb(
-            request.batch, self.model.tokenizer, self.model.dtype, self.model.device
+            request.batch, self.model.tokenizer, self.model.dtype, self.model.device, self.model.is_optimized_for_gaudi
         )
 
         generations, next_batch = self.model.generate_token(batch)
