@@ -25,7 +25,7 @@ sentencepiece = "^0.1.97"
 tokenizers = "0.13.3"
 huggingface-hub = "^0.14.1"
 optimum-habana = "1.6.1"
-optimum = "^1.9.2"
+optimum = "^1.9.1"
 transformers = "4.28.1"
 
 [tool.poetry.group.dev.dependencies]
