@@ -1,4 +1,5 @@
 from typing import Optional, List
+import torch
 
 from text_generation_server.models import CausalLM
 

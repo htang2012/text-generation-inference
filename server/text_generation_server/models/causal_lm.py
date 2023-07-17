@@ -1,5 +1,4 @@
 import torch
-import inspect
 
 from dataclasses import dataclass
 from opentelemetry import trace

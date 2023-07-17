@@ -4,9 +4,6 @@ from typing import Optional, Type
 
 from transformers import PreTrainedTokenizerBase
 
-from text_generation_server.models.custom_modeling.bloom_modeling import (
-    BloomForCausalLM,
-)
 from text_generation_server.models import CausalLM
 from text_generation_server.models.causal_lm import CausalLMBatch
 from text_generation_server.pb import generate_pb2
